@@ -127,22 +127,22 @@
 	});
 
 
+	var isRTL = document.documentElement.getAttribute('dir') === 'rtl';
 	$('.owl-service-item').owlCarousel({
 		items:2,
 		loop:true,
 		dots: true,
-		nav: false,
+		nav: true,
+		navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
 		autoplay: true,
 		margin:15,
+		rtl: isRTL,
 		  responsive:{
 			  0:{
 				  items:1
 			  },
 			  600:{
 				  items:2
-			//   },
-			//   1000:{
-			// 	  items:4
 		}
 		  }
 	  })
@@ -151,7 +151,9 @@
 		items:3,
 		loop:true,
 		dots: true,
-		nav: false,
+		nav: true,
+		navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+		rtl: isRTL,
 		autoplay: true,
 		margin:15,
 		  responsive:{
@@ -165,7 +167,13 @@
 				  items:3
 			  }
 		  }
-	  })
+		})
+
+	$('.owl-skills .item').each(function(){
+		var h4 = $(this).find('h4');
+		var desc = h4.attr('title') || h4.text();
+		$(this).find('p').text(desc);
+	});
 	
 
 	// Menu Dropdown Toggle

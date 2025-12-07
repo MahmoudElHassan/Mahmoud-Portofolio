@@ -409,7 +409,7 @@ header
   display: block;
   background: #f7f7f7;
   color: #6b139f!important;
-  padding-left: 18px;
+  padding-left: 22px;
   height: 40px;
   line-height: 40px;
   -webkit-transition: all 0.3s ease 0s;
@@ -911,13 +911,22 @@ section.projects ul.nacc li {
 section.projects ul.nacc li .left-image {
   position: absolute;
   margin-right: 50px;
+  padding: 10px;
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
+  width: 350px;
+  height: 480px;
+  overflow: hidden;
 }
 
 section.projects ul.nacc li .left-image img {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 section.projects ul.nacc li .left-image .price h6 {
@@ -1045,7 +1054,7 @@ section.skills {
   position: relative;
   padding-bottom: 90px;
   margin-bottom: -30px;
-  padding-top: 40px;
+  padding-top: 170px;
 }
 
 section.skills:before {
@@ -1127,7 +1136,24 @@ section.skills:after {
   background-color: #dc8cdb;
 }
 
+.skills .owl-nav .owl-prev,
+.skills .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
 
+.skills .owl-nav .owl-prev { left: -25px; }
+.skills .owl-nav .owl-next { right: -25px; }
 
 /* 
 ---------------------------------------------
@@ -1919,6 +1945,9 @@ body {
     margin-right: 0px;
     margin-left: 0px;
     transform: translateY(-0%);
+    width: 350px;
+    height: 240px;
+    overflow: hidden;
   }
   section.projects ul.nacc li .left-image img,
   section.our-team ul.nacc li .right-image img {
@@ -1951,3 +1980,22 @@ body {
     font-size: 22px;
   }
 }
+
+/* Certificates arrows same as Skills */
+.certificates .owl-nav .owl-prev,
+.certificates .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.certificates .owl-nav .owl-prev { left: -25px; }
+.certificates .owl-nav .owl-next { right: -25px; }
