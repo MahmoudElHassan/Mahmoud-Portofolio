@@ -251,6 +251,7 @@
                   <div class="menu">
                     <div class="gradient-border"><span>Numeriisoft</span></div>
                     <div class="gradient-border"><span>Khzama</span></div>
+                    <div class="gradient-border"><span>Matrix</span></div>
                     <div class="gradient-border"><span>Aqwom</span></div>
                   </div>
                 </div>
@@ -263,9 +264,9 @@
                         </div>
                         <div class="right-content">
                           <h4>Numeriisoft</h4>
-                          <p>I built the entire backend for the AstroBasic/NumeriiSoft platform delivering personalized karmic/numerology insights and online astrology learning content. The backend is ASP.NET Core Web API following clean architecture with EF Core and SQL using the Repository Pattern.</p>
-                          <p>Integrated multiple third-party APIs to compute karmic profiles from inputs (name, birth date, details), merging results into unified JSON for the frontend.</p>
-                          <p>Implemented course catalog, enrollments, and personalized recommendations. Secured with JWT auth, validation, consistent error handling, and documented via Swagger/OpenAPI.</p>
+                          <p>Built a complete RESTful Web API using ASP.NET Core (.NET Core) to power NumeriiSoft’s astrology and karmic-analysis platform, Developed backend logic to calculate karma numbers, numerology profiles, and personalized insights based on user input (name, birth date, birth details), Integrated multiple external astrology and numerology APIs to generate advanced karmic reports and merge results into unified JSON responses.</p>
+                          <p>Implemented Entity Framework Core with SQL Server for data persistence, including models, migrations, and relational design., Applied the Repository Pattern to maintain clean architecture, improve testability, and abstract data access away from controllers., Built APIs for course catalog management, including listing courses, retrieving details, and linking recommendations to karmic results.</p>
+                          <p>Designed secure authentication using JWT, added input validation, error handling, and protected routes, Ensured high-quality API structure with RESTful standards, response serialization, and full Swagger/OpenAPI documentation, Delivered a scalable, maintainable backend that powers real-time karmic calculations, course recommendations, and astrology content delivery.</p>
                           <div class="text-button">
                             <a href="https://numeriisoft.com/#/login">Visit Numeriisoft</a>
                           </div>
@@ -279,11 +280,31 @@
                         </div>
                         <div class="right-content">
                           <h4>Khzama</h4>
-                          <p>Built the backend for a donation e-commerce platform supporting mosques and community causes in Makkah with ASP.NET Core Web API and Clean Architecture (Domain, Application, Infrastructure, API).</p>
-                          <p>Converted into a multi-tenant SaaS with secure data isolation, deployed on Azure App Service with CI/CD, autoscaling, and environment config.</p>
-                          <p>Provided REST APIs for Admin and Client, integrated payment gateways, donation tracking, financial records, and secured via JWT.</p>
+                          <p>Developed the entire backend for a charity-focused e-commerce donation platform supporting mosques, community causes, and organizations in Makkah, Built a scalable ASP.NET Core Web API solution structured using Clean Architecture (Domain, Application, Infrastructure, API layers) to ensure maintainability, modularity, and clear separation of concerns, Designed and implemented core features including user authentication, campaign management, donation processing, reporting, and payment gateway integration.</p>
+                          <p>Implemented Entity Framework Core with SQL Server, including migrations, relational modeling, and optimized query operations, Applied SOLID principles, dependency injection, and repository-style abstractions to keep business logic isolated and testable, Converted the platform into a full SaaS multi-tenant system, enabling multiple charities to use the same backend while keeping their data securely isolated.</p>
+                          <p>Deployed the solution on Microsoft Azure App Service, configuring environment variables, connection strings, CI/CD pipelines, auto-scaling, and production environment settings, Built RESTful APIs consumed by both the Admin Portal (campaign creation, tracking, reports) and the Client Storefront (browsing campaigns, adding donations, checkout), Implemented secure payment workflows, handled donation tracking, and generated financial records and confirmations, Ensured robust security through JWT authentication, access control, input validation, and secure configuration management, Set up CI/CD pipelines via GitHub Actions / Azure DevOps for automated builds, testing, and deployment to cloud environments.</p>
                           <div class="text-button">
                             <a href="https://store.test.khzama.sa/">Visit Khzama</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="assets/images/Matrix.png" alt="">
+                        </div>
+                        <div class="right-content">
+                          <h4>Matrix</h4>
+                          <p>The project appears to be a backend platform designed to create and manage social media advertising campaigns, specifically tailored for e-commerce businesses or private marketplaces. The core value proposition is to streamline and automate the process of launching targeted marketing campaigns across various social networks from a single, unified interface.</p>
+                          <p>Connect their e-commerce product catalogs or marketplace inventories.</p>
+                          <p>Define target audiences and campaign objectives (e.g., brand awareness, conversions).</p>
+                          <p>Automate the creation of ad creatives, copy, and targeting parameters.</p>
+                          <p>Launch and manage these campaigns across multiple social media platforms (like Meta, Instagram, TikTok, etc.).</p>
+                          <p>Track performance and optimize campaigns based on integrated analytics.</p>
+                          <p>This workflow directly addresses the modern marketing need for dynamic, personalized customer journeys as highlighted in industry analyses, moving away from linear funnels to adaptive, multi-channel strategies</p>
+                          <div class="text-button">
+                            <a href="https://matrix.sa/">Visit Matrix</a>
                           </div>
                         </div>
                       </div>
@@ -295,9 +316,12 @@
                         </div>
                         <div class="right-content">
                           <h4>Aqwom</h4>
-                          <p>Built an electronic portal for financial support applications with a client portal for applicants and an admin dashboard for review and approval.</p>
-                          <p>Backend with ASP.NET Core Web API using Clean Architecture across Domain, Application, Infrastructure, and Presentation layers.</p>
-                          <p>Domain entities and rules, use cases and mapping, EF Core data access and services, and APIs serving both portal and admin.</p>
+                          <p>This project involves building a full-featured electronic portal that allows businesses and organizations to submit financial support applications based on their operational needs. The system consists of a client portal for applicants and an admin dashboard for managing, reviewing, and approving applications, The backend is built using ASP.NET Core Web API and follows Clean Architecture, ensuring high scalability, maintainability, and clear separation of responsibilities.</p>
+                          <p>Clean Architecture divides the system into four main layers: Domain Layer, Application Layer, Infrastructure Layer, and Presentation Layer.</p>
+                          <p>User Authentication & Identity Management: The platform includes a complete and secure authentication system based on ASP.NET Core Identity.</p>
+                          <p>Approval Workflow System: The portal uses a multi-step approval workflow for reviewing submitted applications. Each application moves through predefined levels of approval.</p>
+                          <p>File Upload & Document Management: Applicants can upload supporting documents such as financial statements, registration certificates, and IDs, These practices ensure that files are stored safely, follow security best practices, and cannot be used as attack vectors.</p>
+                          <p>Implement other function and service to let the handle approve the project and connection with the client successfully, such as: Admin Reporting & Dashboard Analytics, Email Notification System, Search & Filtering.</p>
                           <div class="text-button">
                             <a href="https://portal-test.aqwom.org.sa/login">Visit Aqwom</a>
                           </div>
